@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.gasdrawer.ui.activity.InstallRepairPictureActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:background="@color/blue"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25"
+            android:layout_marginLeft="@dimen/x10"
+            android:src="@drawable/ic_back"
+            android:id="@+id/repair_picture_back"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="添加照片"
+            android:textSize="@dimen/x17"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/x15"
+            />
+        <TextView
+            android:id="@+id/repair_picture_sure"
+            android:layout_width="@dimen/x50"
+            android:layout_height="match_parent"
+            android:text="@string/CostBtnSure"
+            android:gravity="center"
+            android:textSize="@dimen/x14"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    <com.sctjsj.gasdrawer.util.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="@dimen/x10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginLeft="@dimen/x10"
+                android:id="@+id/tv_gas"
+                android:textSize="@dimen/x13"
+                android:text="添加燃气灶图片:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x10"
+                android:id="@+id/repair_picGridView_gas"
+                android:background="@drawable/repair_check_edt"
+                />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginLeft="@dimen/x10"
+                android:id="@+id/tv_hot"
+                android:text="添加热水器照片:"
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x10"
+                android:id="@+id/repair_picGridView_hot"
+                android:background="@drawable/repair_check_edt"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginLeft="@dimen/x10"
+                android:id="@+id/tv_two"
+                android:text="添加两用灶图片:"
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x10"
+                android:id="@+id/repair_picGridView_hot_two"
+                android:background="@drawable/repair_check_edt"
+                />
+
+            <TextView
+                android:textSize="@dimen/x13"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginLeft="@dimen/x10"
+                android:id="@+id/tv_dry"
+                android:text="添加干衣机照片:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x10"
+                android:id="@+id/repair_picGridView_hot_two_dry"
+                android:background="@drawable/repair_check_edt"
+                />
+        </LinearLayout>
+    </com.sctjsj.gasdrawer.util.MyScrollview>
+</LinearLayout>

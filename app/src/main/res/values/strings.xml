@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">港华燃气</string>
+    <string name="colorpicker">选择颜色</string>
+    <string name="snapshot">截屏</string>
+    <string name="shape_too_small">图形太小，请重新绘制</string>
+    <string name="shape1_deleted">已删除一个图形</string>
+    <string name="shape_n_deleted">已删除 %d 个图形</string>
+    <string name="invalid_gridcell">单元格太小或太大</string>
+    <string name="undo">撤销</string>
+    <string name="redo">恢复</string>
+    <string name="undo_ok">已撤销</string>
+    <string name="redo_ok">已恢复</string>
+    <string name="nodept">顶点</string>
+    <string name="centerpt">圆心</string>
+    <string name="midpt">中点</string>
+    <string name="quadpt">象限点</string>
+    <string name="crosspt">交点</string>
+    <string name="nearpt">线上点</string>
+    <string name="perppt">垂足</string>
+    <string name="tanpt">切点</string>
+    <string name="degrees">°</string>
+
+    <string name="select">选择</string>
+    <string name="erase">删除</string>
+    <string name="clear">清空</string>
+    <string name="splines">自由画</string>
+    <string name="line">线段</string>
+    <string name="lines">折线</string>
+    <string name="rayline">射线</string>
+    <string name="beeline">无穷直线</string>
+    <string name="bisector">角平分线</string>
+    <string name="triangle">三角形</string>
+    <string name="rect">矩形</string>
+    <string name="square">正方形</string>
+    <string name="diamond">菱形</string>
+    <string name="parallel">平行四边形</string>
+    <string name="quadrangle">四边形</string>
+    <string name="polygon">多边形</string>
+    <string name="dot">点</string>
+    <string name="note">标记</string>
+    <string name="ellipse">椭圆</string>
+    <string name="circle2p">圆心画圆</string>
+    <string name="circle3p">三点画圆</string>
+    <string name="arc_cse">圆规(圆弧)</string>
+    <string name="arc3p">三点圆弧</string>
+    <string name="groupshape">成组图形</string>
+    <string name="circle">圆</string>
+    <string name="roundrect">圆角矩形</string>
+    <string name="imageshape">图像块</string>
+    <string name="arc">圆弧</string>
+    <string name="grid">网格</string>
+    <string name="pathshape">路径块</string>
+
+
+    <!--首页-->
+    <string name="home_page">首页</string>
+    <string name="RadioBtn1">首页</string>
+    <string name="RadioBtn2">待办</string>
+    <string name="RadioBtn3">消息</string>
+    <string name="RadioBtn4">我的</string>
+    <string name="homeImg">安装</string>
+    <string name="homeImg2">维修</string>
+    <string name="homeImg3">审核</string>
+    <string name="homeinfo">公告通知</string>
+    <string name="homemore">more >></string>
+    <string name="backlog_page">待办</string>
+    <string name="backlog_edt">搜索</string>
+
+
+    <!--安装作业单页面-->
+    <string name="instal_page">安装作业单</string>
+    <string name="YWtype">业务类型：</string>
+    <string name="workNumber">工作单号：</string>
+    <string name="userName">客户名称：</string>
+    <string name="department">部  门：</string>
+    <string name="date">日  期：</string>
+    <string name="CEA">CEA 号：</string>
+    <string name="phoneNumber">电  话：</string>
+    <string name="location">地  址：</string>
+    <string name="material">材料使用清单</string>
+    <string name="serve">服务项目费用</string>
+    <string name="sign">签名</string>
+    <string name="button">打印</string>
+    <string name="userinfo">客户基本信息</string>
+
+    <!--服务项目费用界面-->
+    <string name="Costtitle">服务项目费用</string>
+    <string name="CostBtnSure">确认</string>
+    <!--二级item的头-->
+    <string name="needYN">是否需要</string>
+    <string name="serNumber">序号</string>
+    <string name="serName">项目名称</string>
+    <string name="serCost">执行价</string>
+    <string name="serMsg">备注</string>
+    <string name="serPrice">总价</string>
+
+    <!--安装作业确认单页面-->
+    <string name="tv_affirm">确认</string>
+    <string name="backlog_affirm">安装作业确认单</string>
+    <string name="Customer_basic_information">客户基本信息</string>
+    <string name="CEAnumber">CEA扁号：</string>
+    <string name="work_number">作业单编号：</string>
+    <string name="user_number">户号：</string>
+    <string name="user_name">户名：</string>
+    <string name="user_phone">联系电话：</string>
+    <string name="user_adress">地址：</string>
+    <string name="Dispatching_record">派工记录</string>
+    <string name="Planners">规划人：</string>
+    <string name="Installer">安装人：</string>
+    <string name="indtalla_data">安装日期：</string>
+    <string name="program_advocacy">规划说明</string>
+    <string name="Planning_date">规划日期：</string>
+    <string name="Payment_date">缴费日期：</string>
+    <string name="Installation_mode">安装方式：</string>
+    <string name="Installation_position">安装位置：</string>
+    <string name="ok_location">已安装户内应用管位置：</string>
+    <string name="Gas_location">燃气灶接气点安装位置：</string>
+    <string name="Heater_location">热水器接气点安装位置：</string>
+    <string name="two_location">两用灶接气点安装位置：</string>
+    <string name="Kitchen">厨房</string>
+    <string name="balcony">阳台</string>
+    <string name="Other">其他</string>
+    <string name="Not_installed">未安装</string>
+    <string name="Dryer_location">干衣机接气点安装位置：</string>
+
+    <!--材料清单选择页面-->
+    <string name="material_title">材料使用清单</string>
+    <string name="material_sure">确认</string>
+
+    <!--签名页面-->
+    <string name="autograph">签名</string>
+    <string name="autograph_tv_save">保存</string>
+    <string name="autograph_tv_clear">清除</string>
+
+
+    <!--消息界面-->
+    <string name="message_title">消息</string>
+    <!--公告详情-->
+    <string name="Home_NoticeInFo">公告详情</string>
+
+    <!--个人中心页面-->
+    <string name="mine_title">个人中心</string>
+    <string name="mine_message">个人信息</string>
+    <string name="mine_history">任务历史</string>
+    <string name="mine_password">修改密码</string>
+    <string name="mine_btn">注销登陆</string>
+
+    <!--个人资料界面-->
+    <string name="user_msg_title">个人资料</string>
+    <string name="user_msg_name">名字</string>
+    <string name="user_msg_work">职务</string>
+    <string name="user_msg_phone">电话号码</string>
+    <!--历史任务页面-->
+    <string name="mine_history_title">任务历史</string>
+    <!--修改密码界面-->
+    <string name="mine_psw">修改密码</string>
+    <string name="mine_chang_btn">确认修改</string>
+    <string name="login_bt">登陆</string>
+
+    <!--维修作业确认单-->
+    <string name="repair_message_title">维修作业确认单</string>
+    <string name="repair_message_user">报修客户基本信息</string>
+    <string name="repair_message_num">受理编号:</string>
+    <string name="repair_message_formNun">工单号:</string>
+    <string name="repair_message_userNam">报修人:</string>
+    <string name="repair_message_userPhone">联系电话:</string>
+    <string name="repair_message_date">报修时间:</string>
+    <string name="repair_message_Kind">报修类别:</string>
+    <string name="repair_message_userlocation">用户地址:</string>
+    <string name="repair_message_work">派工信息</string>
+    <string name="repair_message_other">报修简述:</string>
+    <string name="repair_message_workDate">派工时间:</string>
+    <string name="repair_message_workuser">维修人:</string>
+    <string name="repair_message_faultMsg">现场查看故障原因</string>
+    <string name="repair_message_faultMsg_hit">填写现场检测的故障原因</string>
+    <string name="repair_message_faultMsg_YN">是否与报修相符:</string>
+    <string name="repair_case">故障与维修情况</string>
+    <string name="repair_stress">压力:</string>
+    <string name="repair_stress_type1">低压</string>
+    <string name="repair_stress_type2">中压</string>
+    <string name="repair_stress_lcation">泄露位置</string>
+    <string name="repair_stress_lcation1">室内</string>
+    <string name="repair_stress_lcation2">地下</string>
+    <string name="repair_stress_lcation3">室外</string>
+    <string name="repair_pipe">管道材质</string>
+    <string name="repair_pipe_type1">镀锌管</string>
+    <string name="repair_pipe_type2">波纹管</string>
+    <string name="repair_pipe_type3">薄壁管</string>
+    <string name="repair_pipe_type4">PE管</string>
+    <string name="repair_pipe_type5">无缝管</string>
+    <string name="repair_pipe_type6">铝塑管</string>
+    <string name="repair_pipe_type7">软管</string>
+    <string name="repair_pipe_type8">其他</string>
+    <string name="repair_instal_date">安装日期</string>
+    <string name="repair_AJ_date">安检日期</string>
+    <string name="repair_gas">燃具维修</string>
+    <string name="repair_gas_add">添加</string>
+    <string name="repair_gas_logo">品牌</string>
+    <string name="repair_gas_type">型号</string>
+    <string name="repair_gas_number">燃具序号</string>
+    <string name="repair_gas_instal_date">安装日期</string>
+    <string name="repair_gas_repair">故障维修</string>
+    <string name="repair_gas_by">保养</string>
+    <string name="repair_gas_ghpj">更换配件</string>
+    <string name="repair_other">保内</string>
+    <string name="repair_other2">保外</string>
+    <string name="repair_othertype">其他维护事项</string>
+    <string name="repair_end_test">维修后气闭性实验</string>
+    <string name="repair_end_testtype1">合格</string>
+    <string name="repair_end_testtype2">不合格</string>
+    <string name="repair_add_pic">添加维修照片</string>
+
+</resources>

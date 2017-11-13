@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sctjsj.gasdrawer.ui.activity.PrintActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:background="@color/blue"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25"
+            android:layout_marginLeft="@dimen/x10"
+            android:src="@drawable/ic_back"
+            android:id="@+id/repair_repairCheck_back"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="打印"
+            android:textSize="@dimen/x17"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/x15"
+            />
+        <TextView
+            android:id="@+id/repair_repairCheck_btn"
+            android:layout_width="@dimen/x50"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/x20"
+            android:id="@+id/tv_content"
+            android:text="上传成功！"
+            android:textSize="@dimen/x15"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x50" />
+
+        <Button
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bt_print"
+            android:text="打印"
+            android:background="@drawable/instal_btn_background"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/x30"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x40" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

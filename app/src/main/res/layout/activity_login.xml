@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/x200" />
+    </LinearLayout>
+    <EditText
+        android:background="@drawable/login_backgroud"
+        android:maxLength="16"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_gravity="center"
+        android:id="@+id/login_userName"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x40"
+        android:hint="请输入手机号"
+        />
+    <EditText
+        android:background="@drawable/login_backgroud"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLength="16"
+        android:hint="请输入密码"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:id="@+id/login_userPassword"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x40" />
+    <Button
+        android:layout_marginTop="@dimen/x40"
+        android:layout_gravity="center"
+        android:background="@drawable/login_button"
+        android:id="@+id/login_bt"
+        android:text="@string/login_bt"
+        android:textColor="@color/white"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x40" />
+</LinearLayout>

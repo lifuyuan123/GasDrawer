@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_material"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.gasdrawer.ui.activity.ChooseMaterialActivity">
+    <!--材料清单布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:background="@color/blue"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25"
+            android:layout_marginLeft="@dimen/x10"
+            android:src="@drawable/ic_back"
+            android:id="@+id/Choose_Material_back"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/material_title"
+            android:textSize="@dimen/x17"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/x15"
+            />
+        <TextView
+            android:id="@+id/Choose_Material_btn"
+            android:layout_width="@dimen/x50"
+            android:layout_height="match_parent"
+            android:text="@string/material_sure"
+            android:gravity="center"
+            android:textSize="@dimen/x14"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/x10"
+        android:id="@+id/Choose_Material_Listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+        />
+</LinearLayout>

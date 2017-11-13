@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/home_Notice_infoTxt"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x20"
+            android:text="五一放假通知"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/x13"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <TextView
+            android:id="@+id/home_Notice_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x10"
+            android:text="2017.03.06"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release_config {
+            keyAlias 'GasDrawer'
+            keyPassword 'CD85118384'
+            storeFile file('H:/TJSJ/GasDrawer.jks')
+            storePassword 'CD85118384'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.sctjsj.gasdrawer"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "NJOVcGcWQe99UIcHVXfQ35",
+                GETUI_APP_KEY   : "Mc2k3jMLZk8YK7P5mpdjY",
+                GETUI_APP_SECRET: "ipMUVGCxgV5EanbJNcRQM"
+        ]
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "x86", "armeabi-v7a", "x86_64"
+        }
+
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        signingConfig signingConfigs.release_config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release_config
+        }
+        debug {
+            signingConfig signingConfigs.release_config
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']     //设置目标的so存放路径
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //Butterknife 注解处理器 每个用到 butterknife 的模块都要添加
+    compile files('libs/touchvg.jar')
+    //圆形的头像的imageView
+    compile project(':basemodule')
+    //个推
+    compile files('libs/badgeview.jar')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.android.support:design:25.0.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.jph.takephoto:takephoto_library:3.0.2'
+    compile 'q.rorbin:QRefreshLayout:1.1.3'
+    compile 'com.getui:sdk:2.10.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.2'
+
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sctjsj.gasdrawer">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+      
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".application.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_icontb"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="icon">
+        <activity
+            android:name=".ui.activity.IndexActivity"
+            android:theme="@style/myAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity
+            android:name=".act.DrawTestActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".act.ChooseIconActivity" />
+        <activity
+            android:name=".ui.activity.InstalActivity"
+            android:theme="@style/myAppTheme" />
+        <activity
+            android:name=".ui.activity.ChooseCostActivity"
+            android:theme="@style/myAppTheme" />
+        <activity android:name=".ui.activity.ChooseMaterialActivity" />
+        <activity
+            android:name=".ui.activity.AffirmErectWorkActivity"
+            android:theme="@style/myAppTheme" />
+        <activity
+            android:name=".ui.activity.HomeNoticeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/myAppTheme" />
+        <activity
+            android:name=".ui.activity.MineMsgActivity"
+            android:theme="@style/myAppTheme" />
+        <activity android:name=".ui.activity.JobsHistoryActivity" />
+        <activity
+            android:name=".ui.activity.AutographActivity"
+            android:theme="@style/myAppTheme" />
+        <activity android:name=".ui.activity.ChangPswActivity" />
+        <activity android:name=".ui.activity.RepairMessageActivity" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.CustomerMsg" />
+        <activity android:name=".ui.activity.RepairWork" />
+        <activity android:name=".ui.activity.RepairCheck" />
+        <activity android:name=".ui.activity.RepairCase" />
+        <activity android:name=".ui.activity.RepairGas" />
+        <activity android:name=".ui.activity.RepairOther" />
+        <activity android:name=".ui.activity.RepairPicture" />
+        <activity android:name=".ui.activity.AuditActivity" />
+        <activity
+            android:name=".ui.activity.CustomerInformationActivity"
+            android:theme="@style/myAppTheme" />
+        <activity
+            android:name=".ui.activity.DispatchRecordActivity"
+            android:theme="@style/myAppTheme" />
+        <activity
+            android:name=".ui.activity.ProgramAdvocacyActivity"
+            android:theme="@style/myAppTheme" />
+        <activity
+            android:name=".ui.activity.InstallationlocationActivity"
+            android:theme="@style/myAppTheme" />
+        <activity android:name=".ui.activity.MaterialUselistActivity" />
+        <activity android:name=".ui.activity.BTScanActivity" />
+        <activity android:name=".ui.activity.AddServerActivity" />
+        <activity android:name=".ui.activity.TaskActivity" />
+        <activity android:name=".ui.activity.MaterialActivity" />
+        //个推服务
+        <service
+            android:name=".server.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <service android:name=".server.DemoIntentService" />
+
+        <activity android:name=".ui.activity.ShowPicActivity" />
+        <activity android:name=".ui.activity.SearchMaterialActivity" />
+        <activity android:name=".ui.activity.SearchServerActivity" />
+        <activity android:name=".ui.activity.InstallRepairPictureActivity" />
+        <activity android:name=".ui.activity.PayStyleActivity" />
+        <activity android:name=".ui.activity.ChooseDiscountActivity" />
+        <activity android:name=".ui.activity.PrintActivity" />
+        <activity android:name=".ui.activity.ChooseConduitActivity"></activity>
+    </application>
+
+</manifest>

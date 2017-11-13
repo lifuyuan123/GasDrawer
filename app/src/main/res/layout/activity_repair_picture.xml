@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_repair_picture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.gasdrawer.ui.activity.RepairPicture">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:background="@color/blue"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25"
+            android:layout_marginLeft="@dimen/x10"
+            android:src="@drawable/ic_back"
+            android:id="@+id/repair_picture_back"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="添加照片"
+            android:textSize="@dimen/x17"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/x15"
+            />
+        <TextView
+            android:id="@+id/repair_picture_sure"
+            android:layout_width="@dimen/x50"
+            android:layout_height="match_parent"
+            android:text="@string/CostBtnSure"
+            android:gravity="center"
+            android:textSize="@dimen/x14"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <com.sctjsj.gasdrawer.util.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="@dimen/x10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:id="@+id/lin_top"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="提示："
+                android:textSize="@dimen/x14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x5"
+                android:text="请提交燃气具的照片。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+            android:text="维修前照片："
+            android:textSize="@dimen/x14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:id="@+id/repair_picGridView"
+            android:background="@drawable/repair_check_edt"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+            android:text="维修前照片："
+            android:textSize="@dimen/x14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:id="@+id/repair_after"
+            android:background="@drawable/repair_check_edt"
+            />
+    </LinearLayout>
+    </com.sctjsj.gasdrawer.util.MyScrollview>
+
+</LinearLayout>

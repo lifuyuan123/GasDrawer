@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banckgray"
+    android:orientation="vertical"
+    tools:context="com.sctjsj.gasdrawer.ui.activity.InstallationlocationActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:background="@color/blue"
+        >
+        <ImageView
+            android:id="@+id/install_back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Installation_position"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/x17"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/install_affirm"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x25"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/x14"
+            android:textColor="@color/white"
+            android:text="@string/tv_affirm"
+            />
+    </RelativeLayout>
+
+    <!--派工记录-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--已安装的户内应用管位置-->
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/x5"
+                android:gravity="center"
+                android:text="@string/ok_location"
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"/>
+            <RadioGroup
+                android:id="@+id/group_kitchen"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40">
+                <RadioButton
+                    android:id="@+id/erectwork_ok_radb_kitchen"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Kitchen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_ok_radb_balcony"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/balcony"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_ok_radb_other"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Other"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/banckgray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+
+        <!--燃气灶接气点安装位置-->
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/x5"
+                android:text="@string/Gas_location"
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"/>
+            <RadioGroup
+                android:id="@+id/group_gas_kitchen"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40">
+                <RadioButton
+                    android:id="@+id/erectwork_gas_kitchen"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Kitchen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_gas_balcony"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/balcony"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_gas_other"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Other"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_gas_noinstall"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Not_installed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/banckgray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+
+        <!--热水器接气点安装位置-->
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/x5"
+                android:gravity="center"
+                android:text="@string/Heater_location"
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"/>
+            <RadioGroup
+                android:id="@+id/group_hot_kitchen"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40">
+                <RadioButton
+                    android:id="@+id/erectwork_hot_kitchen"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Kitchen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_hot_balcony"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/balcony"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_hot_other"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Other"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_hot_noinstall"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Not_installed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/banckgray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+
+
+        <!--两用灶接气点安装位置-->
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/x5"
+                android:gravity="center"
+                android:text="@string/two_location"
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"/>
+            <RadioGroup
+                android:id="@+id/group_twostove_kitchen"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40">
+                <RadioButton
+                    android:id="@+id/erectwork_twostove_kitchen"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Kitchen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_twostove_balcony"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/balcony"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_twostove_other"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Other"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_twostove_noinstall"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Not_installed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:background="@color/banckgray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+
+        <!--干衣机接气点安装位置-->
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/x5"
+                android:gravity="center"
+                android:text="@string/Dryer_location"
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"/>
+            <RadioGroup
+                android:id="@+id/group_drter_chek_kitchen"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x40">
+                <RadioButton
+                    android:id="@+id/erectwork_drter_chek_kitchen"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Kitchen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_drter_chek_balcony"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/balcony"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_drter_chek_other"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Other"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/erectwork_drter_chek_noinstall"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x13"
+                    android:textColor="@color/contentTxt"
+                    android:text="@string/Not_installed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

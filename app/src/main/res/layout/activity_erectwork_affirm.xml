@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/banckgray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:background="@color/blue"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/backlog_affirm"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/x17"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/erectWork_commit"
+            android:layout_width="@dimen/x40"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_alignParentEnd="true"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/x14"
+            />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--客户信息-->
+            <RelativeLayout
+                android:id="@+id/rela_Customer_basic_information"
+                android:layout_marginTop="@dimen/x10"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45">
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/x15"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/customer_icon"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20" />
+                    <TextView
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/Customer_basic_information"
+                        android:textSize="@dimen/x13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_next"
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="@dimen/x15" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_height="@dimen/x1"
+                android:background="@color/banckgray"/>
+
+            <!--派工记录-->
+            <RelativeLayout
+                android:id="@+id/rela_Dispatching_record"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45">
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/x15"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/dispatching_icon"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/Dispatching_record"
+                        android:textSize="@dimen/x13"
+                        android:layout_marginLeft="@dimen/x10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_Dispatching_record"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_next"
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="@dimen/x15" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="@dimen/x310"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_height="@dimen/x1"
+                android:background="@color/banckgray"/>
+
+            <!--规划说明-->
+            <RelativeLayout
+                android:id="@+id/rela_program_advocacy"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45">
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/x15"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/dispatching_icon"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/program_advocacy"
+                        android:textSize="@dimen/x13"
+                        android:layout_marginLeft="@dimen/x10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_next"
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="@dimen/x15" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="@dimen/x310"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_height="@dimen/x1"
+                android:background="@color/banckgray"/>
+
+            <!--选择管道-->
+            <RelativeLayout
+                android:id="@+id/rela_choose_conduit"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45">
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/x15"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/dispatching_icon"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="选择管道"
+                        android:textSize="@dimen/x13"
+                        android:layout_marginLeft="@dimen/x10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_next"
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="@dimen/x15" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="@dimen/x310"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_height="@dimen/x1"
+                android:background="@color/banckgray"/>
+
+            <!--安装位置-->
+            <RelativeLayout
+                android:id="@+id/rela_Installation_position"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45">
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/x15"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/fault_icon"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="安装位置"
+                        android:textSize="@dimen/x13"
+                        android:layout_marginLeft="@dimen/x10" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_next"
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="@dimen/x15"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="@dimen/x310"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_height="@dimen/x1"
+                android:background="@color/banckgray"/>
+
+            <!--添加照片-->
+            <RelativeLayout
+                android:id="@+id/rela_add_pic"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45">
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/x15"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/addicon_icon"
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="添加照片"
+                        android:textSize="@dimen/x13"
+                        android:layout_marginLeft="@dimen/x10" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x10"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_next"
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="@dimen/x15" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/banckgray"/>
+        </LinearLayout>
+</LinearLayout>

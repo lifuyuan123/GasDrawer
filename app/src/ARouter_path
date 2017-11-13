@@ -1,0 +1,10 @@
+com.sctjsj.gasdrawer.ui.activity.LoginActivity @link  path = "/main/act/LoginActivity"
+com.sctjsj.gasdrawer.ui.activity.MainActivity @link  path = "/main/act/index"
+com.sctjsj.gasdrawer.ui.activity.DrawTestActivity @link  path = "/draw/act/drawtest"
+com.sctjsj.gasdrawer.ui.activity.InstalActivity @link  path = "/main/act/instalActivity"
+com.sctjsj.gasdrawer.ui.activity.ChooseCostActivity @link  path = "/main/act/ChooseCostActivity"
+com.sctjsj.gasdrawer.ui.activity.ChooseMaterialActivity @link  path ="/main/act/ChooseMaterialActivity"
+com.sctjsj.gasdrawer.ui.activity.AffirmErectWorkActivity @link  path = "/main/act/AffirmErectWorkActivity"
+com.sctjsj.gasdrawer.ui.activity.HomeNoticeActivity @link  path = "/main/act/HomeNoticeActivity"
+com.sctjsj.gasdrawer.ui.activity.AutographActivity @link  path = "/main/act/AutographActivity"
+
